@@ -165,10 +165,14 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     background-color: #201e1f;
-    color: white;
     padding: 10px;
     margin-top: 15px;
     border: 2px solid #faba63;
+}
+
+.readMore a {
+    color: white;
+    text-decoration: none;
 }
 
 .handCraftedRight button {
@@ -232,25 +236,43 @@ h3 {
     display: block;
 }
 
-.top article,
+/* .top article,
 .bottom article,
 .image {
     width: 50%;
     float: left;
+} */
+
+.top article {
+    float: right;
+    width: 50%;
+}
+.image {
+    width: 50%;
 }
 
-.sustainable h2,
-.mix h2,
-.sustainable p,
-.mix p {
-    width: 70%;
-    margin: 0 auto;
+.bottom article {
+    width: 50%;
+    float: left;
+} 
+
+.bottom .image {
+    float: left;
 }
 
-.sustainable,
-.mix {
-    width: 70%;
+.top .image {
+    float: right;
+}
+
+
+.sustainable {
     margin-top: 100px;
+}
+
+.mix {
+    margin-top: 100px;
+    width: 50%;
+    float: left;
 }
 
 .sustainable h2,
@@ -263,6 +285,15 @@ h3 {
 .mix p {
     font-weight: 300;
 }
+
+.sustainable h2,
+.mix h2,
+.sustainable p,
+.mix p {
+    width: 70%;
+    margin: 0 auto;
+}
+
 
 .sustainable button,
 .mix button {
@@ -324,16 +355,7 @@ footer .wrapper {
     height: 50px;
     background-color: white;
     float: left;
-}
-
-.visuallyHidden {
-    visibility: hidden;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    color: #232323;
-    margin: 0;
-    width: 300px;
+    border: none;
 }
 
 .subscribe {
@@ -346,6 +368,15 @@ footer .wrapper {
     text-transform: uppercase;
     font-family: 'Italiana', serif;
     font-size: 18px;
+}
+
+::placeholder {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #232323;
 }
 
 .contact {
@@ -411,7 +442,6 @@ footer .wrapper {
     }
 
     .subscribe {
-        font-family: 'Catamaran', sans-serif;
         font-size: 18px;
     }
 
@@ -473,9 +503,6 @@ footer .wrapper {
         margin-top: 20px;
         font-size: 20px;
     }
-
-
-
 }
 
 @media (max-width: 960px) {
@@ -513,15 +540,27 @@ footer .wrapper {
     .image img {
         object-fit: cover;
         height: 50vh;
-    }
+    } 
 
     article.sustainable,
     article.mix {
+        clear: both;
         float: none;
         width: 100%;
+        margin-bottom: 50px;
     }
 
+    .sustainable h2, 
+    .mix h2 {
+        text-align: center;
+        padding-top: 50px;
+    }
 
+    .sustainable button,
+    .mix button {
+        display: block;
+        margin: 40px auto;
+    }
 }
 
 @media (max-width: 840px) {
@@ -584,10 +623,8 @@ footer .wrapper {
         font-weight: 400;
     }
 
-    .visuallyHidden {
-        visibility: visible;
-        margin: 0;
-        width: 300px;
+    .contact {
+        margin-left: 0;
     }
 
     .contact h3 {
@@ -652,7 +689,7 @@ footer .wrapper {
     }
 
     header {
-        height: 50vh;
+        background-position: 62% 0;
     }
 
     h1{
@@ -696,10 +733,6 @@ footer .wrapper {
 
 @media (max-width: 500px) {
 
-    h1{
-        padding: 70px 0 0 0;
-    }
-
     .latestCollection h2 {
         font-size: 30px;
         margin-bottom: 100px;
@@ -712,7 +745,7 @@ footer .wrapper {
 
     .image img {
         object-fit: cover;
-        height: 20vh;
+        height: 30vh;
     }
 
     
