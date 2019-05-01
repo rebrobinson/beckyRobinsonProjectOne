@@ -11,14 +11,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* Fonts
     font-family: 'Lato', sans-serif;
     font-family: 'Italiana', serif; 
+    font-family: 'Roboto', serif;
 */
 
 /* Colors 
-
+    dark grey: #201e1f;
+    yellow: #faba63;
+    dark blue: #14171f;
 */
 
 
-/* General Styles */
+/******* GENERAL STYLES *******/
 
 body {
     font-family: 'Lato', sans-serif;
@@ -34,7 +37,7 @@ img {
     width: 100%;
 }
 
-/* Header Styles */
+/******** HEADER STYLES *********/
 
 header {
     height: 100vh;
@@ -121,17 +124,18 @@ h1 {
 
 
 
-/* MAIN Styles */
-
-/* Hand Crafted section */
+/****** MAIN STYES *******/
 
 h2 {
     font-family: 'Italiana', serif;
-    font-size: 51px;
+    font-size: 50px;
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 2px;
 }
+
+/* Hand Crafted section */
+
 
 .handCrafted {
     background-color: #14171f;
@@ -215,9 +219,6 @@ h2 {
 .events i,
 .collabs i {
     width: 100%;
-}
-
-.far { 
     color: #faba63;
     font-size: 60px;
     text-align: center;
@@ -236,34 +237,24 @@ h3 {
     display: block;
 }
 
-/* .top article,
-.bottom article,
-.image {
-    width: 50%;
-    float: left;
-} */
-
-.top article {
-    float: right;
-    width: 50%;
-}
-.image {
-    width: 50%;
-}
-
+.top article, 
 .bottom article {
     width: 50%;
-    float: left;
-} 
-
-.bottom .image {
-    float: left;
 }
 
+.top article, 
 .top .image {
     float: right;
 }
 
+.image {
+    width: 50%;
+}
+
+.bottom article,
+.bottom .image {
+    float: left;
+} 
 
 .sustainable {
     margin-top: 100px;
@@ -271,8 +262,6 @@ h3 {
 
 .mix {
     margin-top: 100px;
-    width: 50%;
-    float: left;
 }
 
 .sustainable h2,
@@ -294,14 +283,13 @@ h3 {
     margin: 0 auto;
 }
 
-
 .sustainable button,
 .mix button {
     margin-left: 15%;
     margin-top: 50px;
 }
 
-/* Footer Styles */
+/***** FOOTER STYLES *****/
 
 footer {
     background-color: #14171f;
@@ -396,22 +384,17 @@ footer .wrapper {
     padding: 0;
 }
 
-
 .copyright {
     background-color: black;
-    text-align: center;
 }
 
 .copyright p {
     padding: 10px;
     margin: 0;
+    text-align: center;
 }
 
-
-
-
-
-/* MEDIA QUERIES */
+/***** MEDIA QUERIES ******/
 
 @media (max-width: 1330px) {
     .sustainable,
@@ -440,15 +423,9 @@ footer .wrapper {
     .emailEntry {
         margin-bottom: 12px;
     }
-
-    .subscribe {
-        font-size: 18px;
-    }
-
 }
 
 @media (max-width: 1140px) {
-    
     header {
         height: 80vh;
     }
@@ -506,7 +483,6 @@ footer .wrapper {
 }
 
 @media (max-width: 960px) {
-    
     .collectionImages img:last-child {
         display: none;
     }
@@ -564,7 +540,6 @@ footer .wrapper {
 }
 
 @media (max-width: 840px) {
-
     .handCrafted {
         padding: 70px 0;
     }
@@ -637,11 +612,9 @@ footer .wrapper {
         text-align: center;
         line-height: 22px;
     }
-
 }
 
 @media (max-width: 780px) {
-
     header .wrapper i {
         visibility: visible;
     }
@@ -683,7 +656,6 @@ footer .wrapper {
 }
 
 @media (max-width: 600px) {
-
     .wrapper {
         width: 90%;
     }
@@ -727,12 +699,9 @@ footer .wrapper {
     .copyright {
         font-size: 14px;
     }
-
-
 }
 
 @media (max-width: 500px) {
-
     .latestCollection h2 {
         font-size: 30px;
         margin-bottom: 100px;
@@ -747,6 +716,4 @@ footer .wrapper {
         object-fit: cover;
         height: 30vh;
     }
-
-    
 }
